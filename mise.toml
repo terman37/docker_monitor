@@ -1,2 +1,5 @@
 [tools]
 uv = "latest"
+
+[hooks]
+postinstall = ["echo Installing pre-commit", "pre-commit install"]
