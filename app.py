@@ -174,7 +174,7 @@ app.layout = Container(
                         ),
                         Graph(id="live-chart", config={"displaylogo": False}, style={"height": "500px"}),
                     ],
-                    width=4,
+                    width=6,
                 ),
                 # Right Side: Logs
                 Col(
@@ -183,7 +183,7 @@ app.layout = Container(
                         html.Div(id="table-container", style={"maxHeight": "85vh", "overflowY": "auto", "border": "1px solid #444"}),
                         Interval(id="interval-component", interval=1 * 1000, n_intervals=0),
                     ],
-                    width=8,
+                    width=6,
                 ),
             ]
         ),

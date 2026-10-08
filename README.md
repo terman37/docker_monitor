@@ -12,6 +12,10 @@ A Dash + Plotly app that connects to the local Docker daemon, polls a selected c
 
 Stats collection runs in a background thread; the UI refreshes via a 1s Dash `Interval`.
 
+<img src="docs/pictures/screenshot.png"
+     alt="Screenshot"
+     style="float: left; margin-right: 10px;" />
+
 ## Requirements
 
 - Python `>=3.13`
@@ -21,6 +25,7 @@ Stats collection runs in a background thread; the UI refreshes via a 1s Dash `In
 ## Setup
 
 ```bash
+mise install
 uv sync
 ```
 
@@ -35,6 +40,5 @@ Open http://localhost:8050, click **Refresh**, then pick a container from the dr
 ## Project Layout
 
 - `app.py` — Dash app, background stats collector, callbacks.
-- `main.py` — placeholder entry point (unused by the dashboard).
 - `pyproject.toml` — project metadata and dependencies.
 - `mise.toml` — pins `uv` via mise.

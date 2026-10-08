@@ -1,4 +1,5 @@
 [tools]
+pre-commit = "latest"
 uv = "latest"
 
 [hooks]
